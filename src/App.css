@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* Pour font-size:10px (16px par défaut)
+10px / 16px = 0.625 = 62.5% 
+(Pourcentage de la taille de police du navigateur de l'utilisateur)
+Puis utilisation de rem (1 rem = 10px) à la place de px(sauf petite valeure comme letter-spacing) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  max-width: 144rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ////////////<NavBar/>//////////// */
+.nav-bar_hzt {
+  width: 100%;
+  height: 9rem;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 101.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-bar_vrt {
+  flex-basis: 11.7rem;
+  height: 100%;
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  /* flex-basis: 132rem; */
+  flex-basis: auto;
+  background-color: white;
+  padding: 6.8rem 9rem 8.6rem 10.7rem;
 }
