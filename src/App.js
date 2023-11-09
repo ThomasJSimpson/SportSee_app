@@ -1,11 +1,13 @@
 import "./App.css";
 import NavBar from "./components/NavBar.jsx";
-// import Dashboard from "./pages/Dashboard.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
   return (
     <>
-      <NavBar>{/* <Dashboard /> */}</NavBar>
+      <NavBar>
+        <Dashboard />
+      </NavBar>
     </>
   );
 }
