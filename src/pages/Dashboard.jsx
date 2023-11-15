@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from "react";
 import { userService } from "../_services/userService.js";
 import MainDataList from "../components/MainDataList.jsx";
-
+import Score from "../components/Score.jsx";
+import Performance from "../components/Performance.jsx";
 export default function Dashboard() {
   const [data, setData] = useState(null);
   const [id, setID] = useState(12);
@@ -22,6 +23,8 @@ export default function Dashboard() {
           </div>
           <div className="dashboard">
             <MainDataList id={id} />
+            <Score id={id} />
+            <Performance id={id} />
           </div>
         </>
       )}

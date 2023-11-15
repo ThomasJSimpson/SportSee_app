@@ -98,3 +98,42 @@ body {
 .main_data-item div {
   margin-left: 2.4rem;
 }
+/* ////////////<Performance/>//////////// */
+.performance {
+  width: 25.8rem;
+  height: 26.3rem;
+  background-color: rgba(40, 45, 48, 1);
+  border-radius: 0.7rem;
+
+  grid-column: 2 / 3;
+  grid-row: 2 /3;
+  overflow: hidden;
+}
+/* ////////////<Score/>//////////// */
+
+.score {
+  width: 25.8rem;
+  height: 26.3rem;
+  border-radius: 0.7rem;
+  background-color: rgba(251, 251, 251, 1);
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  overflow: hidden;
+  padding: 2.4rem 3rem;
+  background-color: #fbfbfb;
+}
+
+.score .title {
+  font-size: 15px;
+  fill: #20253a;
+}
+.score .content {
+  line-height: 26px;
+  font-size: 16px;
+  fill: #74798c;
+}
+.score .content .percent {
+  font-weight: 700;
+  font-size: 26px;
+  fill: #282d30;
+}
