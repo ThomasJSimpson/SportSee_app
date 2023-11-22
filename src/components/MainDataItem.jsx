@@ -14,6 +14,7 @@ export default function MainDataItem({ data, type }) {
     lineHeight: "24px",
     letterSpacing: "0px",
     textAlign: "left",
+    userSelect: "none",
   };
   const styles2 = {
     fontFamily: "Roboto",
@@ -23,6 +24,7 @@ export default function MainDataItem({ data, type }) {
     letterSpacing: "0px",
     textAlign: "left",
     color: "rgba(116, 121, 140, 1)",
+    userSelect: "none",
   };
   let src, alt, dataName, dataNum;
   switch (type) {
