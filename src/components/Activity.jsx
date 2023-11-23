@@ -8,7 +8,9 @@ export default function Activity({ id, isMocked }) {
   useEffect(() => {
     userService.getActivity(setData, id, isMocked);
   }, [setData, id, isMocked]);
-
+  if (data) {
+    console.log(data);
+  }
   const renderTooltip = ({ payload, active }) => {
     return (
       active && (
@@ -36,9 +38,9 @@ export default function Activity({ id, isMocked }) {
     );
   };
   return (
-    <div className="activity">
+    <>
       {data && (
-        <div className="barChart">
+        <div className="BARRRR">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data.sessions} barGap={8} barCategoryGap={1}>
               <CartesianGrid vertical={false} strokeDasharray="1 1" />
@@ -60,7 +62,7 @@ export default function Activity({ id, isMocked }) {
           </ResponsiveContainer>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
