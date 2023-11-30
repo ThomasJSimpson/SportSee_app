@@ -7,25 +7,7 @@ import fatIcon from "../assets/fat-icon.svg";
 export default function MainDataItem({ data, type }) {
   // data && console.log(data, type);
   const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = data;
-  const styles = {
-    fontFamily: "Roboto",
-    fontSize: "20px",
-    fontWeight: 700,
-    lineHeight: "24px",
-    letterSpacing: "0px",
-    textAlign: "left",
-    userSelect: "none",
-  };
-  const styles2 = {
-    fontFamily: "Roboto",
-    fontSize: "14px",
-    fontWeight: 500,
-    lineHeight: "24px",
-    letterSpacing: "0px",
-    textAlign: "left",
-    color: "rgba(116, 121, 140, 1)",
-    userSelect: "none",
-  };
+
   let src, alt, dataName, dataNum;
   switch (type) {
     case "cal":
@@ -60,8 +42,8 @@ export default function MainDataItem({ data, type }) {
     <div className="main_data-item">
       <img src={src} alt={alt} />
       <div>
-        <p style={styles}>{dataNum}</p>
-        <p style={styles2}>{dataName}</p>
+        <p className="main_data-item--num">{dataNum}</p>
+        <p className="main_data-item--name">{dataName}</p>
       </div>
     </div>
   );
