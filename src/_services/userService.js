@@ -1,5 +1,4 @@
 import fetchData from "./fetchData.js";
-// import { Navigate } from "react-router-dom";
 import WelcomeData from "../models/welcomeData.js";
 import ScoreData from "../models/scoreData.js";
 import MainData from "../models/mainData.js";
@@ -27,26 +26,29 @@ export const userService = {
 const baseUrl = (id) => {
   return `http://localhost:3000/user/${id}`;
 };
+
 const checkJson = (jsonData) => {
   if (jsonData === undefined) {
     return;
   }
 };
+
+const alertMess = "Données non trouvées via l'API. Veuillez rafraîchir la page pour utiliser les données mockées (par défaut) ou retournez à la page de connexion.";
+
 async function getWelcome(setData, id, isMocked) {
   const jsonData = isMocked === true ? (id === "12" ? mockedMainData12 : id === "18" ? mockedMainData18 : null) : await fetchData(baseUrl(id));
 
   if (jsonData === undefined) {
-    alert("Données non trouvées via l'API. Veuillez rafraîchir la page pour utiliser les données mockées (par défaut) ou retournez à la page de connexion.");
+    alert(alertMess);
     return;
   }
-
   setData(new WelcomeData(jsonData));
 }
 
 async function getScore(setData, id, isMocked) {
   const jsonData = isMocked === true ? (id === "12" ? mockedMainData12 : id === "18" ? mockedMainData18 : null) : await fetchData(baseUrl(id));
   checkJson(jsonData);
-  setData(new ScoreData(jsonData));
+  setData([new ScoreData(jsonData)]);
 }
 
 async function getMainData(setData, id, isMocked) {

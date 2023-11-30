@@ -16,43 +16,28 @@ export default function Dashboard({ isMocked }) {
   }, [setData, id, isMocked]);
 
   return (
-    <>
-      {data && (
-        <>
-          <div className="welcome">
-            <p className="welcome_name">
-              Bonjour <span className="welcome_name--name">{data.userInfos.firstName}</span>
-            </p>
-            <p className="welcome_mess">Félicitation ! Vous avez explosé vos objectifs hier 🤙</p>
-          </div>
-          <div className="bigbox">
-            <div className="box1">
-              <Activity id={id} isMocked={isMocked} />
-
-              <div className="box1_2">
-                <AverageSession id={id} isMocked={isMocked} />
-                <Performance id={id} isMocked={isMocked} />
-                <Score id={id} isMocked={isMocked} />
-              </div>
-            </div>
-            <div className="main_data">
-              <MainDataList id={id} isMocked={isMocked} />
-              {/* <div className="box2--small"></div>
-              <div className="box2--small"></div>
-              <div className="box2--small"></div>
-              <div className="box2--small"></div> */}
-            </div>
-          </div>
-
-          {/* <div className="dashboard">
+    data && (
+      <>
+        <section className="welcome">
+          <p className="welcome_name">
+            Bonjour <span className="welcome_name--name">{data.userInfos.firstName}</span>
+          </p>
+          <p className="welcome_mess">Félicitation ! Vous avez explosé vos objectifs hier 🤙</p>
+        </section>
+        <section className="dashboard-charts">
+          <div className="dashboard-charts_bigchart">
             <Activity id={id} isMocked={isMocked} />
+            <div className="dashboard-charts_smallcharts">
+              <AverageSession id={id} isMocked={isMocked} />
+              <Performance id={id} isMocked={isMocked} />
+              <Score id={id} isMocked={isMocked} />
+            </div>
+          </div>
+          <div className="main_data">
             <MainDataList id={id} isMocked={isMocked} />
-            <AverageSession id={id} isMocked={isMocked} />
-            <Performance id={id} isMocked={isMocked} />
-            <Score id={id} isMocked={isMocked} />
-          </div> */}
-        </>
-      )}
-    </>
+          </div>
+        </section>
+      </>
+    )
   );
 }
