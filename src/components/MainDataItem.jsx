@@ -5,7 +5,6 @@ import carbIcon from "../assets/carbs-icon.svg";
 import fatIcon from "../assets/fat-icon.svg";
 
 export default function MainDataItem({ data, type }) {
-  // data && console.log(data, type);
   const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = data;
 
   let src, alt, dataName, dataNum;
