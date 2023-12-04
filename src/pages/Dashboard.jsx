@@ -13,7 +13,7 @@ export default function Dashboard({ isMocked }) {
 
   useEffect(() => {
     userService.getWelcome(setData, id, isMocked);
-  }, [setData, id, isMocked]);
+  }, [id, isMocked]);
 
   return (
     data && (

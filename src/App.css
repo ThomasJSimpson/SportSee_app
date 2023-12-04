@@ -125,9 +125,6 @@ body {
   white-space: nowrap;
 }
 .main {
-  padding-left: 6.818%;
-  padding-top: 6.8rem;
-  padding-right: 6.818%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -182,12 +179,6 @@ body {
   width: 100%;
 }
 /* ////////////<Activity/>//////////// */
-.activity {
-  height: 320px;
-  border-radius: 0.7rem;
-  background-color: #fbfbfb;
-  padding: 2.4rem 2.6rem 2.3rem 3.2rem;
-}
 
 .barchart {
   height: 320px;
@@ -424,7 +415,7 @@ body {
     gap: 2.5rem;
   }
 
-  .activity {
+  .barchart {
     max-width: unset;
   }
   .dashboard-charts_smallcharts {

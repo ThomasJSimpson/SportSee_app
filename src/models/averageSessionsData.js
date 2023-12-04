@@ -3,7 +3,6 @@ class AverageSessionsData {
     this._userId = data.data.userId;
     this._sessions = data.data.sessions;
   }
-
   get userId() {
     return this._userId;
   }

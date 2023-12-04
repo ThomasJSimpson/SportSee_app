@@ -8,9 +8,7 @@ export default function Performance({ id, isMocked }) {
   useEffect(() => {
     userService.getPerformance(setData, id, isMocked);
   }, [setData, id, isMocked]);
-  if (data) {
-    console.log(data);
-  }
+
   return (
     data && (
       <div className="performance">
