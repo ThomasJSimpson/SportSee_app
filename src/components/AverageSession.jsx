@@ -12,8 +12,6 @@ export default function AverageSession({ id, isMocked }) {
     const { active, payload } = props;
 
     if (active && payload.length > 0) {
-      console.log(payload);
-
       if (payload[0].payload.day === "") {
         return null;
       }

@@ -12,7 +12,7 @@ class ScoreData {
     return this._keyData;
   }
   get score() {
-    return this._score;
+    return this._score * 100;
   }
   get userInfos() {
     return this._userInfos;

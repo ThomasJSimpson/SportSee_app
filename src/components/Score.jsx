@@ -17,11 +17,11 @@ export default function Score({ id, isMocked }) {
             <text className="title" x="30" y="35">
               Score
             </text>
-            <PolarAngleAxis type="number" domain={[0, 1]} tick={false} />
+            <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
             <RadialBar dataKey="score" cornerRadius="5" fill="#ff0000" />
             <circle cx="50%" cy="50%" r="80" fill="#fff"></circle>
             <text className="content">
-              <tspan className="percent" x={108} y={129}>{`${data[0].score * 100}%`}</tspan>
+              <tspan className="percent" x={108} y={129}>{`${data[0].score}%`}</tspan>
               <tspan x={102} y={155}>
                 de votre
               </tspan>

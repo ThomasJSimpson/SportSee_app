@@ -1,41 +1,7 @@
 import { React } from "react";
-import protIcon from "../assets/protein-icon.svg";
-import calIcon from "../assets/calories-icon.svg";
-import carbIcon from "../assets/carbs-icon.svg";
-import fatIcon from "../assets/fat-icon.svg";
 
-export default function MainDataItem({ data, type }) {
-  const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = data;
-
-  let src, alt, dataName, dataNum;
-  switch (type) {
-    case "cal":
-      src = calIcon;
-      alt = "icon calories";
-      dataName = "Calories";
-      dataNum = `${calorieCount.toLocaleString("en-US")}kCal `;
-      break;
-    case "prot":
-      src = protIcon;
-      alt = "icon protein";
-      dataName = "Protéines";
-      dataNum = `${proteinCount.toLocaleString("en-US")}g`;
-      break;
-    case "carb":
-      src = carbIcon;
-      alt = "icon carbs";
-      dataName = "Glucides";
-      dataNum = `${carbohydrateCount.toLocaleString("en-US")}g`;
-      break;
-    case "fat":
-      src = fatIcon;
-      alt = "icon fat";
-      dataName = "Lipides";
-      dataNum = `${lipidCount.toLocaleString("en-US")}g`;
-      break;
-    default:
-      console.log("no type");
-  }
+export default function MainDataItem({ data }) {
+  const { src, alt, dataName, dataNum } = data;
 
   return (
     <div className="main_data-item">
