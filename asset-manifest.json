@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SportSee_app/static/css/main.c52703d2.css",
+    "main.js": "/SportSee_app/static/js/main.7224c0f6.js",
+    "static/media/name-sportsee.svg": "/SportSee_app/static/media/name-sportsee.3d48081f23d04ca18ebd25c7ddddd647.svg",
+    "static/media/swim-icon.svg": "/SportSee_app/static/media/swim-icon.e26dba434236828a108a786d8215cd31.svg",
+    "static/media/logo-sportsee.svg": "/SportSee_app/static/media/logo-sportsee.6311720d937abd30d65ba41549e9cd26.svg",
+    "static/media/bike-icon.svg": "/SportSee_app/static/media/bike-icon.d516c0e89dbb3aaab23afac6a130ca06.svg",
+    "static/media/carbs-icon.svg": "/SportSee_app/static/media/carbs-icon.aa0e74661df8c71ea59cbe777ac24615.svg",
+    "static/media/fat-icon.svg": "/SportSee_app/static/media/fat-icon.82c6cb9fd2b3e6307fca82c2f796ed14.svg",
+    "static/media/protein-icon.svg": "/SportSee_app/static/media/protein-icon.c285979616f56dc9dfa457e51c583d68.svg",
+    "static/media/yoga-icon.svg": "/SportSee_app/static/media/yoga-icon.6c31a2775a609d06fd5d99eb347250ed.svg",
+    "index.html": "/SportSee_app/index.html",
+    "static/media/calories-icon.svg": "/SportSee_app/static/media/calories-icon.5db5a3aff9bd8f441f49792782c8262e.svg",
+    "static/media/fitness-icon.svg": "/SportSee_app/static/media/fitness-icon.4fe7fb9fe3554121b3d42dcb489eefd0.svg",
+    "main.c52703d2.css.map": "/SportSee_app/static/css/main.c52703d2.css.map",
+    "main.7224c0f6.js.map": "/SportSee_app/static/js/main.7224c0f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c52703d2.css",
+    "static/js/main.7224c0f6.js"
+  ]
+}
