@@ -23,8 +23,8 @@ function App() {
     <BrowserRouter>
       <NavBar>
         <Routes>
-          <Route path="/" element={<SettingPage handleId={handleId} handleData={handleData} id={id} isMocked={isMocked} />} />
-          <Route path="/user/:id" element={<Dashboard isMocked={isMocked} />} />
+          <Route path="/SportSee_app" element={<SettingPage handleId={handleId} handleData={handleData} id={id} isMocked={isMocked} />} />
+          <Route path="/SportSee_app/user/:id" element={<Dashboard isMocked={isMocked} />} />
         </Routes>
       </NavBar>
     </BrowserRouter>

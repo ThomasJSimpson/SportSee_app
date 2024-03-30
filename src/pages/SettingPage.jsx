@@ -24,7 +24,7 @@ export default function SettingPage(props) {
       <p className="setting-page_name">Bonjour</p>
       <Selector data={optionId} />
       <Selector data={optionData} />
-      <Link className="connection-link" to={`/user/${id}`}>
+      <Link className="connection-link" to={`/SportSee_app/user/${id}`}>
         <p>Se Connecter</p>
       </Link>
     </section>

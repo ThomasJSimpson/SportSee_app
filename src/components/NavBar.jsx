@@ -1,4 +1,5 @@
 import { React } from "react";
+import { Link } from "react-router-dom";
 import yogaIcon from "../assets/yoga-icon.svg";
 import bikeIcon from "../assets/bike-icon.svg";
 import swimIcon from "../assets/swim-icon.svg";
@@ -16,7 +17,9 @@ export default function NavBar({ children }) {
         </div>
 
         <div className="nav-links">
-          <p>Accueil</p>
+          <Link className="" to={`/SportSee_app/`}>
+            <p>Accueil</p>
+          </Link>
           <p>Profil</p>
           <p>Réglages</p>
           <p>Communauté</p>
